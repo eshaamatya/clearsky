@@ -179,6 +179,7 @@
   z-index: 2;
   background-color: #fff;
   width: 100%;
+  height: 150px;
   transition: 0.2s ease-in-outss; }
   .sticky ul li a {
     color: #000; }
@@ -193,7 +194,8 @@
   #footer-home .footer-section {
     margin: 256px 151px 108px 137px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center; }
     #footer-home .footer-section .footer-logo img {
       width: 230px;
       height: 158px; }
@@ -220,7 +222,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 85px;
-    align-items: center; }
+    align-items: center;
+    border-radius: 5px; }
     #footer-home .footer-contact .footer-desc-container {
       padding-left: 100px; }
       #footer-home .footer-contact .footer-desc-container h1 {
@@ -311,7 +314,7 @@ img {
   text-align: left;
   margin: 0 128px 112px; }
   #home-a .special .box {
-    width: 275px;
+    width: 100%;
     height: 365px;
     background: #fff;
     filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.05));
@@ -347,9 +350,10 @@ img {
 #home-b .advice-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 128px 112px; }
+  margin: 0 128px 112px;
+  max-width: 100%; }
   #home-b .advice-container .image-section {
-    width: 590px;
+    width: 100%;
     height: 734px;
     background: url(../images/image1.png) no-repeat right center/cover;
     border-radius: 5px 0px 0px 5px; }
@@ -469,8 +473,9 @@ img {
   padding-top: 156px; }
   #individual-expertise .individual-images {
     position: absolute;
-    bottom: 69%;
-    left: 9%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 20px solid #fff;
     background: #FFFFFF;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
@@ -576,7 +581,7 @@ img {
   background: #f9f9f9; }
   #contact-forms .contact-form {
     padding: 15px 0 150px;
-    max-width: 1239px;
+    max-width: 80%;
     margin: 0 auto; }
     #contact-forms .contact-form .text-fields {
       padding: 0 30px;
@@ -792,6 +797,7 @@ img {
   z-index: 2;
   background-color: #fff;
   width: 100%;
+  height: 150px;
   transition: 0.2s ease-in-outss; }
   .sticky ul li a {
     color: #000; }
@@ -806,7 +812,8 @@ img {
   #footer-home .footer-section {
     margin: 256px 151px 108px 137px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center; }
     #footer-home .footer-section .footer-logo img {
       width: 230px;
       height: 158px; }
@@ -833,7 +840,8 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 85px;
-    align-items: center; }
+    align-items: center;
+    border-radius: 5px; }
     #footer-home .footer-contact .footer-desc-container {
       padding-left: 100px; }
       #footer-home .footer-contact .footer-desc-container h1 {
@@ -851,6 +859,95 @@ img {
       padding: 16px 96px;
       font-weight: 600; }
 
+@media (min-width: 1400px) {
+  #individual-expertise .individual-images {
+    transform: translate(-50%, -25%); } }
+
+@media (max-width: 1200px) {
+  #header-home .main-nav li {
+    padding-left: 30px; }
+  #header-home .header-container .header-content {
+    margin-left: 90px; }
+    #header-home .header-container .header-content h1 {
+      font-size: 35px;
+      line-height: 55px; }
+  .sticky {
+    height: 140px; }
+  #home-a .heading-section {
+    margin-top: 60px; }
+  #home-a .special {
+    grid-gap: 15px;
+    margin: 0 30px 112px; }
+  #home-b .advice-container {
+    margin: 0 40px 112px; }
+  #individual-expertise .individual-images {
+    transform: translate(-50%, -75%); }
+  #team-a .team-box {
+    padding: 87px 50px 0; }
+  #contact-boxes .contact-box {
+    max-width: 90%; }
+  #contact-forms .contact-form {
+    max-width: 90%;
+    padding: 15px 0 100px; }
+  #contact-maps {
+    margin-top: 100px; } }
+
+@media (max-width: 992px) {
+  #header-home .header-container {
+    grid-template-columns: 1fr; }
+    #header-home .header-container .header-content {
+      margin-left: 50px; }
+  #header-homesub .main-nav li {
+    padding-left: 30px; }
+  .sticky {
+    height: 150px; }
+  #home-a .special {
+    grid-template-columns: repeat(2, 1fr); }
+  #home-b .advice-container {
+    margin: 0 25px 112px; }
+    #home-b .advice-container .advice-description {
+      height: 734px; }
+      #home-b .advice-container .advice-description h2.section-title {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 30px 30px 25px 30px; }
+      #home-b .advice-container .advice-description ul.btn-advice li {
+        margin-right: 20px; }
+      #home-b .advice-container .advice-description ul.btn-advice .btn-primary, #home-b .advice-container .advice-description ul.btn-advice .btn-secondary {
+        padding: 10px 25px; }
+  #expertise-a .expertise-box {
+    padding: 80px 30px 0; }
+  #expertise-a .expertise-image img {
+    width: 100%; }
+  #individual-expertise .individual-images {
+    transform: translate(-50%, -90%); }
+  #team-a .team-box {
+    padding: 87px 30px 0;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+  #team-a .team-image {
+    margin: 0 25pxss; }
+    #team-a .team-image img {
+      width: 100%;
+      height: auto; }
+  #team-a .team-desc {
+    width: 100%;
+    height: auto; }
+  #contact-section .heading-section {
+    margin-top: 50px; }
+  #contact-boxes .contact-box {
+    flex-wrap: wrap; }
+  #footer-home .footer-section {
+    margin: 256px 30px 108px 30px;
+    justify-items: center; }
+  #footer-home .footer-contact {
+    grid-gap: 30px;
+    width: 90%; }
+    #footer-home .footer-contact .footer-desc-container {
+      padding-left: 30px; } }
+
 @media (max-width: 768px) {
   #header-home {
     height: 510px; }
@@ -858,7 +955,7 @@ img {
       grid-template-columns: 1fr;
       grid-column: 1; }
       #header-home .header-container .header-content {
-        margin-left: 25px; }
+        margin: 0 25px 100px; }
       #header-home .header-container h1 {
         font-size: 31px;
         line-height: 41px; }
@@ -960,7 +1057,7 @@ img {
     top: 5px;
     right: 15px; }
   .sticky {
-    height: 106px; }
+    height: 91px; }
   #home-a .heading-section {
     margin-top: 50px; }
     #home-a .heading-section h2.section-title {
@@ -971,13 +1068,11 @@ img {
       max-width: 80%;
       margin: 24px auto 50px auto; }
   #home-a .special {
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: 1fr;
+    grid-gap: 20pxs;
+    grid-template-columns: repeat(2, 1fr);
     text-align: left;
     margin: 0 42px 112px; }
     #home-a .special .box {
-      width: 100%;
       margin-bottom: 25px; }
   #home-b .advice-container {
     display: grid;
@@ -1081,10 +1176,9 @@ img {
   #individual-expertise {
     padding-top: 80px; }
     #individual-expertise .individual-images {
-      bottom: 87%;
-      transform: translate(-4%, 0); }
+      transform: translate(-50%, -142%); }
     #individual-expertise .individual-details {
-      margin-top: 40px; }
+      margin-top: 80px; }
       #individual-expertise .individual-details .individual-heading {
         max-width: 80%;
         padding-bottom: 40px; }
@@ -1108,10 +1202,8 @@ img {
     margin-bottom: 50px; }
   #team-a .team-image {
     max-width: 80%;
-    border-radius: 5px; }
-    #team-a .team-image img {
-      width: 100%;
-      height: auto; }
+    border-radius: 5px;
+    margin: 25px 0; }
   #team-a .team-desc {
     width: 80%;
     height: auto;
@@ -1156,9 +1248,24 @@ img {
       line-height: 24px; }
     #header-home .header-container .btn-header {
       padding: 16px 88px; }
+  #home-a .special {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    text-align: left;
+    margin: 0 42px 112px; }
+    #home-a .special .box {
+      width: 100%;
+      margin-bottom: 25px; }
   #home-b .advice-container .advice-description {
     height: 900px; }
     #home-b .advice-container .advice-description h2.section-title {
       line-height: 45px; }
     #home-b .advice-container .advice-description ul.btn-advice .btn-primary, #home-b .advice-container .advice-description ul.btn-advice .btn-secondary {
-      padding: 10px 16px; } }
+      padding: 10px 16px; }
+  #individual-expertise {
+    padding-top: 80px; }
+    #individual-expertise .individual-images {
+      transform: translate(-50%, -145%); }
+  #team-a .team-image {
+    margin: 25px 0; } }
