@@ -1061,6 +1061,8 @@ img {
     right: 15px; }
   .sticky {
     height: 91px; }
+    .sticky .navbar-container .hamburger-lines .line {
+      background: #0b87C9; }
   #home-a .heading-section {
     margin-top: 50px; }
     #home-a .heading-section h2.section-title {
