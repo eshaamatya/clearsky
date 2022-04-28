@@ -18,7 +18,7 @@ $('.single-item').slick({
 });
 
 // top scroll button
-const showOnPx = 300;
+const showOnPx = 100;
 const backToTopButton = document.querySelector(".back-to-top")
 
 const scrollContainer = () => {

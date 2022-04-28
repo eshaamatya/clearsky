@@ -354,7 +354,7 @@ img {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase; }
-    #home-a .special a span.move-right:hover .right-arrow {
+    #home-a .special a .move-right:hover .right-arrow {
       transform: translateX(20px);
       transition: 0.5s ease-in-out; }
     #home-a .special a i {
