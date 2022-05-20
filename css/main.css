@@ -508,6 +508,11 @@ img {
       height: 42px;
       border: 1px solid #808285;
       padding: 4px; }
+    #individual-expertise .individual-details .icon-commercial::before, #individual-expertise .individual-details .icon-commercial::after {
+      content: '';
+      width: 20px;
+      height: 1px;
+      color: red; }
     #individual-expertise .individual-details .individual-heading {
       padding: 24px 0 100px;
       max-width: 60%;
